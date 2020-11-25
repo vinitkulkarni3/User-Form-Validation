@@ -12,4 +12,15 @@ else
   echo "$fname is not valid"
 fi
 echo "--------------------------------"
+
+echo ""
+read -p "Enter last name: " lname
+pattern2="^[A-Z a-z]{3,}"
+if [[ $lname =~ $pattern2 ]]
+then
+  echo "$lname is valid"
+else
+  echo "$lname is not valid"
+fi
+echo "--------------------------------"
 echo ""
