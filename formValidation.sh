@@ -24,3 +24,16 @@ else
 fi
 echo "--------------------------------"
 echo ""
+
+read -p "Enter Email ID: " email
+pattern3="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+if [[ $email =~ $pattern3 ]]
+then
+  echo "$email is valid"
+else
+  echo "$email is not valid"
+fi
+echo "-------------------------------"
+echo ""
+
+
