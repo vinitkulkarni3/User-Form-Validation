@@ -49,4 +49,14 @@ fi
 echo "-------------------------------"
 echo ""
 
+echo "RULES FOR PASSWORD"
+echo "Minimum 8 characters + 1 Uppercase letter + 1 Special Symbol + 1 Numberic"
+read -p "Enter the password: " pass
+pattern5="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+if [[ $pass =~ $pattern5 ]]
+then
+  echo "$pass is valid"
+else
+  echo "$pass is not valid"
+fi
 
