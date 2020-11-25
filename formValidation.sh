@@ -37,3 +37,16 @@ echo "-------------------------------"
 echo ""
 
 
+echo "Example: 99 8844556644
+read -p "Enter Mobile number: " mnumber
+pattern4="^((([9][1][ ])\d{10}))$"
+if [[ $mnumber =~ $pattern4 ]]
+then
+  echo "$mnumber is valid"
+else
+  echo "$mnumber is not valid"
+fi
+echo "-------------------------------"
+echo ""
+
+
